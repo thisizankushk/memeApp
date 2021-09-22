@@ -90,9 +90,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(chooser)
     }
 
-    fun crash(view: android.view.View) {
-        throw RuntimeException("Test Crash") // Force a crash
-    }
+
 
 
 }
