@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         loadmeme()
     }
 
+
+
+
+
     var currentimageurl: String? = null
     private fun loadmeme() {
         progressbar.visibility = View.VISIBLE
@@ -85,4 +89,10 @@ class MainActivity : AppCompatActivity() {
         val chooser = Intent.createChooser(intent, "Share this meme using..")
         startActivity(chooser)
     }
+
+    fun crash(view: android.view.View) {
+        throw RuntimeException("Test Crash") // Force a crash
+    }
+
+
 }

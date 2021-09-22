@@ -7,6 +7,18 @@
     android:background="@drawable/imageb2"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/crashbutton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Crash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:onClick="crash"
+        />
+
     <ImageView
         android:id="@+id/memeimage"
         android:layout_width="0dp"
@@ -147,5 +159,7 @@
         app:lottie_rawRes="@raw/loadingc"
 
         tools:ignore="NotSibling" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
